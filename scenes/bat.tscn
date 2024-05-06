@@ -1,0 +1,48 @@
+[gd_scene load_steps=8 format=3 uid="uid://djw05d2xgad3a"]
+
+[ext_resource type="Texture2D" uid="uid://byrybyia0l6bm" path="res://assets/Tilemap/tilemap-characters.png" id="1_dqxyq"]
+[ext_resource type="PackedScene" uid="uid://d1tofnqwieq46" path="res://scenes/killzone.tscn" id="2_lqqku"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_btcmv"]
+atlas = ExtResource("1_dqxyq")
+region = Rect2(150, 50, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_flpja"]
+atlas = ExtResource("1_dqxyq")
+region = Rect2(175, 50, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v3pkj"]
+atlas = ExtResource("1_dqxyq")
+region = Rect2(200, 50, 24, 24)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_60rlm"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_btcmv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_flpja")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v3pkj")
+}],
+"loop": true,
+"name": &"default",
+"speed": 8.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8ftoy"]
+size = Vector2(12.25, 12)
+
+[node name="bat" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_60rlm")
+autoplay = "default"
+frame_progress = 0.427757
+
+[node name="Killzone" parent="." instance=ExtResource("2_lqqku")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
+shape = SubResource("RectangleShape2D_8ftoy")
