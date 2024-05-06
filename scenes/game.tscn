@@ -11,7 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://djw05d2xgad3a" path="res://scenes/bat.tscn" id="8_6s6lv"]
 [ext_resource type="PackedScene" uid="uid://c4ta107ehkxju" path="res://scenes/blueenemy.tscn" id="9_fxptp"]
 [ext_resource type="FontFile" uid="uid://cog54dk0jfii3" path="res://assets/fonts/PixelOperator8.ttf" id="10_jg706"]
-[ext_resource type="PackedScene" uid="uid://bjqirn4751f4j" path="res://scenes/ui.tscn" id="11_tmych"]
+[ext_resource type="PackedScene" uid="uid://bdhmfkv5t0f7n" path="res://scenes/ui.tscn" id="11_tmych"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_a6xwm"]
 texture = ExtResource("1_pdkq8")
