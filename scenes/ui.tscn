@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://bjqirn4751f4j"]
+
+[ext_resource type="FontFile" uid="uid://dsjkrihivodi3" path="res://assets/fonts/PixelOperator8-Bold.ttf" id="1_4h27d"]
+
+[node name="UI" type="CanvasLayer"]
+
+[node name="Label" type="Label" parent="."]
+offset_left = 57.0
+offset_top = 55.0
+offset_right = 233.0
+offset_bottom = 87.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_4h27d")
+theme_override_font_sizes/font_size = 32
+text = "Coins: 0/23"
+horizontal_alignment = 1
+vertical_alignment = 1
