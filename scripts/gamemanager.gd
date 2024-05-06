@@ -5,5 +5,10 @@ var count =0
 
 func add_():
 	count+=1
+	if (count==23):
+		ui.get_node("Label2").visible=true
+		get_tree().reload_current_scene()
+	
+	
 	ui.get_node("Label").text="Coins: "+str(count)+"/23"
 	
