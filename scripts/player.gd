@@ -6,12 +6,16 @@ const JUMP_VELOCITY = -300.0
 @onready var animated_sprite_2d = $AnimatedSprite2D
 @onready var die_effect = $dieEffect
 @onready var jump_effect = $jumpEffect
+@onready var ui = $"../UI"
 
 var on_ladder = false
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
+
+func timeStop():
+	ui.get_node("Panel").stop()
 
 func die():
 	dying=true

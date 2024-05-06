@@ -7,6 +7,7 @@ func add_():
 	count+=1
 	if (count==23):
 		ui.get_node("Label2").visible=true
+		ui.get_node("Panel").stop()
 		get_tree().reload_current_scene()
 	
 	
