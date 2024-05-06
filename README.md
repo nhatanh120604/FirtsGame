@@ -2,6 +2,8 @@
 
 ## Download: [Here](https://github.com/nhatanh120604/FirtsGame/releases)
 
+![image](https://github.com/nhatanh120604/FirtsGame/assets/110049038/b26ba881-96de-4c5a-8011-3fd4ef1657b9)
+
 ## Introduction
 This project, **SpicyBox**, is a simple yet addictive game created with the Godot game engine. It serves as my first foray into game development, marking a starting point for my exploration of Godot's capabilities.
 
