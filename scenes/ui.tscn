@@ -16,6 +16,19 @@ text = "Coins: 0/23"
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="Label3" type="Label" parent="."]
+offset_left = 743.0
+offset_top = 37.0
+offset_right = 1109.0
+offset_bottom = 114.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_4h27d")
+theme_override_font_sizes/font_size = 24
+text = "Time: 00:00
+High Score: 00:00"
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [node name="Label2" type="Label" parent="."]
 visible = false
 offset_left = 325.0
