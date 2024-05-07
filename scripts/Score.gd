@@ -1,3 +1,4 @@
 extends Node
 
-var highscore=0
+var highscore=999999999
+var check=0

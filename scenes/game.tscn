@@ -729,6 +729,8 @@ script = ExtResource("1_d0ifg")
 [node name="Timer" type="Timer" parent="GameManager"]
 wait_time = 2.0
 
+[node name="UI" parent="." instance=ExtResource("11_tmych")]
+
 [node name="TileMap" type="TileMap" parent="."]
 position = Vector2(38, 43)
 tile_set = SubResource("TileSet_m0por")
@@ -915,8 +917,6 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("10_jg706")
 theme_override_font_sizes/font_size = 8
 text = "Space to jump.."
-
-[node name="UI" parent="." instance=ExtResource("11_tmych")]
 
 [node name="ladder" parent="." instance=ExtResource("13_qyk3p")]
 position = Vector2(-6, 69)

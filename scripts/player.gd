@@ -15,7 +15,7 @@ var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
 
 func timeStop():
-	ui.get_node("Panel").stop()
+	ui.get_node("Panel").stop(false)
 
 func die():
 	dying=true

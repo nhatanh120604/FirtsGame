@@ -30,6 +30,18 @@ text = "Time:
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="Time2" type="Label" parent="."]
+offset_left = 598.0
+offset_top = 46.0
+offset_right = 964.0
+offset_bottom = 123.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_4h27d")
+theme_override_font_sizes/font_size = 24
+text = "High Score:"
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [node name="Win" type="Label" parent="."]
 visible = false
 offset_left = 325.0
@@ -78,3 +90,13 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("1_4h27d")
 theme_override_font_sizes/font_size = 24
 text = "00"
+
+[node name="Highscore" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 908.0
+offset_top = 73.0
+offset_right = 1148.0
+offset_bottom = 97.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_4h27d")
+theme_override_font_sizes/font_size = 24
