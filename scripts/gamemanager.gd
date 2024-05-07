@@ -16,7 +16,7 @@ const SAVE_PATH="user://savedata.save"
 
 func add_():
 	count+=1
-	if (count==4):
+	if (count==27):
 		endgame()
 	ui.get_node("Coin").text="Coins: "+str(count)+"/27"
 func endgame():
