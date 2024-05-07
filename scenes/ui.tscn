@@ -53,16 +53,13 @@ theme_override_fonts/font = ExtResource("1_4h27d")
 theme_override_font_sizes/font_size = 64
 text = "You win!!"
 
-[node name="Panel" type="Panel" parent="."]
-offset_right = 40.0
-offset_bottom = 40.0
+[node name="Panel" type="Node2D" parent="."]
 script = ExtResource("2_o0pm6")
 
 [node name="Minutes" type="Label" parent="Panel"]
-layout_mode = 0
-offset_left = 908.0
+offset_left = 912.0
 offset_top = 43.0
-offset_right = 974.0
+offset_right = 978.0
 offset_bottom = 67.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("1_4h27d")
@@ -70,10 +67,9 @@ theme_override_font_sizes/font_size = 24
 text = "00:"
 
 [node name="Seconds" type="Label" parent="Panel"]
-layout_mode = 0
-offset_left = 974.0
+offset_left = 978.0
 offset_top = 43.0
-offset_right = 1040.0
+offset_right = 1044.0
 offset_bottom = 67.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("1_4h27d")
@@ -81,10 +77,9 @@ theme_override_font_sizes/font_size = 24
 text = "00."
 
 [node name="Msecs" type="Label" parent="Panel"]
-layout_mode = 0
-offset_left = 1038.0
+offset_left = 1042.0
 offset_top = 43.0
-offset_right = 1104.0
+offset_right = 1108.0
 offset_bottom = 67.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("1_4h27d")
@@ -92,10 +87,9 @@ theme_override_font_sizes/font_size = 24
 text = "00"
 
 [node name="Highscore" type="Label" parent="Panel"]
-layout_mode = 0
-offset_left = 908.0
+offset_left = 912.0
 offset_top = 73.0
-offset_right = 1148.0
+offset_right = 1152.0
 offset_bottom = 97.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("1_4h27d")

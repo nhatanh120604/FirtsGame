@@ -1,4 +1,4 @@
-extends Panel
+extends Node2D
 
 var time:float = 0.0
 var minutes: int =0
