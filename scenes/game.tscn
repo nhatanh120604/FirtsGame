@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://cunqhkux2d7lw"]
+[gd_scene load_steps=22 format=3 uid="uid://cunqhkux2d7lw"]
 
 [ext_resource type="Script" path="res://scripts/gamemanager.gd" id="1_d0ifg"]
 [ext_resource type="Texture2D" uid="uid://co2ostj03k05h" path="res://assets/Tilemap/tilemap.png" id="1_pdkq8"]
@@ -13,6 +13,7 @@
 [ext_resource type="FontFile" uid="uid://cog54dk0jfii3" path="res://assets/fonts/PixelOperator8.ttf" id="10_jg706"]
 [ext_resource type="PackedScene" uid="uid://bdhmfkv5t0f7n" path="res://scenes/ui.tscn" id="11_tmych"]
 [ext_resource type="PackedScene" uid="uid://c22i3hr5tvh2y" path="res://scenes/ladder.tscn" id="13_qyk3p"]
+[ext_resource type="Script" path="res://scripts/Score.gd" id="14_u2rxq"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_a6xwm"]
 texture = ExtResource("1_pdkq8")
@@ -725,6 +726,9 @@ _data = {
 unique_name_in_owner = true
 script = ExtResource("1_d0ifg")
 
+[node name="Timer" type="Timer" parent="GameManager"]
+wait_time = 2.0
+
 [node name="TileMap" type="TileMap" parent="."]
 position = Vector2(38, 43)
 tile_set = SubResource("TileSet_m0por")
@@ -768,6 +772,18 @@ position = Vector2(137, 52)
 
 [node name="coins4" parent="Coins" instance=ExtResource("5_e713b")]
 position = Vector2(163, -10)
+
+[node name="coins24" parent="Coins" instance=ExtResource("5_e713b")]
+position = Vector2(209, -37)
+
+[node name="coins25" parent="Coins" instance=ExtResource("5_e713b")]
+position = Vector2(276, -72)
+
+[node name="coins26" parent="Coins" instance=ExtResource("5_e713b")]
+position = Vector2(374, -73)
+
+[node name="coins27" parent="Coins" instance=ExtResource("5_e713b")]
+position = Vector2(-79, -76)
 
 [node name="coins5" parent="Coins" instance=ExtResource("5_e713b")]
 position = Vector2(200, 71)
@@ -830,7 +846,7 @@ position = Vector2(749, -91)
 rotation = -0.729224
 
 [node name="coins21" parent="Coins" instance=ExtResource("5_e713b")]
-position = Vector2(585, -37)
+position = Vector2(587, -37)
 rotation = -0.729224
 
 [node name="coins22" parent="Coins" instance=ExtResource("5_e713b")]
@@ -886,7 +902,7 @@ position = Vector2(606, 68)
 position = Vector2(818, -75)
 
 [node name="blueenemy" parent="Enemy" instance=ExtResource("9_fxptp")]
-position = Vector2(19, 67)
+position = Vector2(7, 67)
 
 [node name="Labels" type="Node" parent="."]
 
@@ -905,3 +921,8 @@ text = "Space to jump.."
 [node name="ladder" parent="." instance=ExtResource("13_qyk3p")]
 position = Vector2(-6, 69)
 collision_mask = 2
+
+[node name="Score" type="Node" parent="."]
+script = ExtResource("14_u2rxq")
+
+[connection signal="timeout" from="GameManager/Timer" to="GameManager" method="_on_timer_timeout"]

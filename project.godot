@@ -18,6 +18,8 @@ config/icon="res://icon.svg"
 [autoload]
 
 Music="*res://scenes/music.tscn"
+Gamemanager="*res://scripts/gamemanager.gd"
+Score="*res://scripts/Score.gd"
 
 [input]
 

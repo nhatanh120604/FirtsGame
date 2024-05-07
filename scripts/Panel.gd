@@ -16,3 +16,5 @@ func _process(delta)-> void:
 	
 func stop()->void:
 	set_process(false)
+
+
